@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon.svg"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>QR code component | by Bilal Türkmen</title>
+  </head>
+  <body>
+    <main>
+      <span class="sr-only">QR code component</span>
+      <div class="color-mode">
+        <input
+          type="checkbox"
+          aria-label="use dark mode"
+          aria-checked="false"
+          role="switch"
+          class="color-mode__checkbox"
+          id="checkbox"
+        />
+        <label for="checkbox" class="color-mode__label">
+          <i class="fas fa-moon fa-xs" aria-hidden="true">
+            <span class="sr-only">dark mode on</span>
+          </i>
+          <i class="fas fa-sun fa-xs" aria-hidden="true">
+            <span class="sr-only">light mode on</span>
+          </i>
+
+          <span class="color-mode__ball" aria-hidden="true"></span>
+        </label>
+      </div>
+      <div class="qr-card">
+        <div class="qr-card__bg">
+          <img
+            class="qr-card__image"
+            src="./images/image-qr-code.png"
+            alt="Qr code image for a challenge"
+          />
+        </div>
+        <h1 class="qr-card__title">
+          Improve your front-end skills by building projects
+        </h1>
+        <p class="qr-card__description">
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+          to the next level
+        </p>
+      </div>
+    </main>
+    <footer class="footer-attribution">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://bilalturkmen.com" target="_blank">Bilal Türkmen</a>.
+    </footer>
+    <script>
+      const checkbox = document.getElementById("checkbox");
+      checkbox.addEventListener("change", () => {
+        document.body.classList.toggle("dark");
+      });
+    </script>
+  </body>
+</html>
