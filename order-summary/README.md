@@ -1,7 +1,7 @@
 <h1 >Order summary card solution</h1>
 <div >
   <h3>
-    <a href="https://bilalturkmen.github.io/order-summary/"> Live View </a>
+    <a href="https://bilalturkmen.github.io/frontend-mentor-challenges/order-summary/"> Live View </a>
     <span> | </span>
     <a href="https://www.frontendmentor.io/solutions/order-summary-card-with-flexbox-sDvU61gxez"> Solution Page </a>
   </h3>
