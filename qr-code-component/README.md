@@ -1,7 +1,7 @@
 <h1>QR Code Component</h1>
 <div>
   <h3>
-    <a href="https://bilalturkmen.github.io/qr-code-component/"> Live View </a>
+    <a href="https://bilalturkmen.github.io/frontend-mentor-challenges/qr-code-component/"> Live View </a>
     <span> | </span>
     <a href="https://www.frontendmentor.io/solutions/qr-code-component-with-flexbox-VatIn7QzgX"> Solution Page </a>
   </h3>
