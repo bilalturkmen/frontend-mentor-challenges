@@ -1,4 +1,4 @@
-#### 🙌 Completed challenges from frontend mentor.
+### 🙌 Completed challenges from frontend mentor.
 
 <br>
 <br>
