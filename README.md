@@ -1,9 +1,9 @@
-### 🙌 Completed challenges from frontend mentor.
+### Completed fem challenges 🙌
 
 <br>
 <br>
 
-| Challenge  Name          | Files                                                                                             | Lang                | View                                                                                    | Fm Page                                                                                                          |
+| Challenge  Name          | Files                                                                                             | Lang                | View                                                                                    | Fem Page                                                                                                          |
 |----------------------|---------------------------------------------------------------------------------------------------|---------------------|-----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
 | Results summary      | [Code](https://github.com/bilalturkmen/frontend-mentor-challenges/tree/main/results-summary)      | Html, Css, React Js | [Live](https://results-summaryy.netlify.app/)                                           | [Solution](https://www.frontendmentor.io/solutions/results-summary-component-with-react-js-oY58nHZGtW)           |
 | Order summary card   | [Code](https://github.com/bilalturkmen/frontend-mentor-challenges/tree/main/order-summary)        | Html, Css           | [Live](https://bilalturkmen.github.io/frontend-mentor-challenges/order-summary/)        | [Solution](https://www.frontendmentor.io/solutions/order-summary-card-with-flexbox-sDvU61gxez)                   |
