@@ -1,7 +1,7 @@
 <h1>NFT preview card component</h1>
 <div>
   <h3>
-    <a href="https://bilalturkmen.github.io/nft-preview-card-component/"> Live View </a>
+    <a href="https://bilalturkmen.github.io/frontend-mentor-challenges/nft-preview-card/"> Live View </a>
     <span> | </span>
     <a href="https://frontendmentor.io/solutions/nft-preview-card-component-flexbox-nZkg6C_Bik"> Solution Page </a>
   </h3>
