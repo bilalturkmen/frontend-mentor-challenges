@@ -1,7 +1,7 @@
 <h1>Four card feature section </h1>
   <div>
     <h3>
-      <a href="https://bilalturkmen.github.io/four-card-feature-section/"> Live View </a>
+      <a href="https://bilalturkmen.github.io/frontend-mentor-challenges/four-card-section/"> Live View </a>
       <span> | </span>
       <a href="https://www.frontendmentor.io/solutions/four-card-feature-section-challenge-with-css-grid-vdJDK27_nC"> Solution Page </a>
     </h3>
