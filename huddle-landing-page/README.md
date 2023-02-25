@@ -1,7 +1,7 @@
 <h1>Huddle landing page</h1>
 <div>
   <h3>
-    <a href="https://bilalturkmen.github.io/huddle-landing-page-with-single-introductory-section/"> Live View </a>
+    <a href="https://bilalturkmen.github.io/frontend-mentor-challenges/huddle-landing-page/"> Live View </a>
     <span> | </span>
     <a href="https://www.frontendmentor.io/solutions/huddle-landing-page-only-css-grid-P9GYLXp5KZ"> Solution Page </a>
   </h3>
