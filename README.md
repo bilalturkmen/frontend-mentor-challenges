@@ -1,4 +1,4 @@
-# Frontend Mentor Challenges
+# Fm Challenges
 
 Completed challenges from [frontendmentor.io](https://www.frontendmentor.io/)
 
