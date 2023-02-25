@@ -1,7 +1,7 @@
 <h1>Product preview card component</h1>
 <div>
   <h3>
-    <a href="https://bilalturkmen.github.io/product-preview-card/"> Live View </a>
+    <a href="https://bilalturkmen.github.io/frontend-mentor-challenges/product-preview-card/"> Live View </a>
     <span> | </span>
     <a href="https://www.frontendmentor.io/solutions/product-preview-card-css-grid-and-flexbox-PPpkkmOJge"> Solution Page </a>
   </h3>
