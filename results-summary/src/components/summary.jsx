@@ -1,9 +1,7 @@
 // Hooks
-import { useState } from "react";
-// libraries
-import JSConfetti from "js-confetti";
-
-const jsConfetti = new JSConfetti();
+import React, { useState } from "react";
+// Libraries
+import { useReward } from "react-rewards";
 
 function getSuccessMessage() {
   const messages = [
@@ -20,23 +18,32 @@ function getSuccessMessage() {
 }
 
 function Summary({ data }) {
-  const [message, setMessage] = useState("Summary");
   const [items] = useState(data);
+  const [message, setMessage] = useState("Summary");
+  const [disabled, setDisabled] = useState(false);
 
-  const handleCompleted = async (e) => {
+  const { reward: confettiReward } = useReward("rewardId", "emoji", {
+    emoji: ["⚡️", "💥", "✨", "💫", "🌸", "🌟", "🌂"],
+    elementSize: 15,
+    elementCount: 60,
+  });
+
+  const handleCompleted = () => {
+    setDisabled(true);
+    confettiReward();
     setMessage(getSuccessMessage());
-    await jsConfetti.addConfetti({
-      emojis: ["⚡️", "💥", "✨", "💫", "🌸", "🌟", "🌂"],
-      emojiSize: 15,
-      confettiNumber: 200,
-    });
-    setMessage("Summary");
+
+    setTimeout(() => {
+      setMessage("Summary");
+      setDisabled(false);
+    }, 2000);
   };
 
   return (
     <div className="card__summary">
       <h2> {message} </h2>
-      <div className="summary--items ">
+
+      <div className="summary--items">
         {items.map((item, index) => (
           <div
             key={index}
@@ -54,10 +61,17 @@ function Summary({ data }) {
             </div>
           </div>
         ))}
-        <button type="button" aria-label="Continue" onClick={handleCompleted}>
+
+        <button
+          type="button"
+          onClick={handleCompleted}
+          aria-label="Continue"
+          disabled={disabled}
+        >
           Continue
         </button>
       </div>
+      <span id="rewardBtn" />
     </div>
   );
 }

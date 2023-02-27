@@ -2,12 +2,16 @@
 import { useState } from "react";
 // Libraries
 import CountUp from "react-countup";
-import JSConfetti from "js-confetti";
-
-const jsConfetti = new JSConfetti();
+import { useReward } from "react-rewards";
 
 function Result({ averageScore }) {
   const [counting, setCounting] = useState(false);
+  const { reward: confettiReward } = useReward("rewardId", "emoji", {
+    emoji: ["⚡️", "💥", "✨", "💫", "🌸", "🌟", "🌂"],
+    elementSize: 15,
+    elementCount: 60,
+    lifetime: 100,
+  });
 
   return (
     <div className="card__result">
@@ -16,15 +20,10 @@ function Result({ averageScore }) {
         <p>
           <CountUp
             end={averageScore.toFixed(0)}
-            duration={1.5}
+            duration={1}
             onEnd={() => {
               setCounting(true);
-
-              jsConfetti.addConfetti({
-                emojis: ["⚡️", "💥", "✨", "💫", "🌸", "🌟", "🌂"],
-                emojiSize: 15,
-                confettiNumber: 200,
-              });
+              confettiReward();
             }}
           />
         </p>
@@ -37,7 +36,8 @@ function Result({ averageScore }) {
           <div className="greeting"> Great</div>
         )}
       </div>
-      <p>
+      <span id="rewardId" />
+      <p className="result--text">
         You scored higher than 65% of the people who have taken these tests.
       </p>
     </div>
