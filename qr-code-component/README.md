@@ -7,7 +7,7 @@
   </h3>
 </div>
 <div>
-  Solution to the challenge on Frontend Mentor.
+  A challenge on Frontend Mentor.
 </div>
 
 ### 👍 My Challenges:
