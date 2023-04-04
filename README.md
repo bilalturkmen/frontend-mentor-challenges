@@ -1,4 +1,4 @@
-### Completed frontend mentor challenges 🙌
+### Completed frontend mentor challenges 🎉
 
 <br>
 <br>
