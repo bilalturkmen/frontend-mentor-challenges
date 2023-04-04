@@ -1,7 +1,7 @@
 <h1 >Results summary component</h1>
 <div >
   <h3>
-    <a href="https://curious-frangipane-902af8.netlify.app/"> Live View </a>
+    <a href="https://timely-sopapillas-1ad707.netlify.app/"> Live View </a>
     <span> | </span>
     <a href="https://www.frontendmentor.io/solutions/results-summary-component-with-react-js-oY58nHZGtW"> Solution Page </a>
   </h3>
