@@ -1,0 +1,353 @@
+:root {
+  --primary: hsl(157, 74%, 62%);
+  --bkg: 224, 35%, 11%;
+  --form: hsl(225, 26%, 23%);
+  --brand: hsl(225, 21%, 45%);
+  --text: hsl(225, 40%, 83%);
+  --white: hsl(0, 0%, 100%);
+  --hover: hsl(157, 100%, 85%);
+  --error: red;
+
+  --ff-primary: "Chivo", sans-serif;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+  border-radius: 3.75rem;
+}
+
+input,
+input::placeholder,
+button {
+  font-family: var(--ff-primary);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+input,
+input::placeholder {
+  color: var(--text);
+}
+
+/* Page Layout */
+
+body {
+  font-family: var(--ff-primary);
+  font-size: 1.125rem;
+  font-weight: 100;
+  color: var(--text);
+  background: url(../assets/mobile/image-host.jpg) no-repeat;
+  background-size: cover;
+}
+
+.main_cont {
+  min-height: 100vh;
+  background: hsla(var(--bkg), 0.8);
+}
+
+.container {
+  padding-inline: 1.5rem;
+}
+
+.hero {
+  display: block;
+  text-align: center;
+}
+
+.hero img {
+  margin: 3.8rem 0 3.3rem;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero__content h1 {
+  align-self: center;
+  font-size: 1.625rem;
+  font-weight: 100;
+  line-height: 2.375rem;
+  color: var(--primary);
+  text-transform: uppercase;
+}
+
+.hero__content h1 span {
+  color: var(--white);
+}
+
+.hero__content p {
+  margin-top: 1rem;
+  font-size: 0.938rem;
+  line-height: 1.563rem;
+}
+
+.content--brands {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.25rem;
+  margin-top: 2.1rem;
+  order: 2;
+}
+
+.content--brands img {
+  height: 1rem;
+}
+
+.content--brands img:nth-child(3) {
+  height: 0.72rem;
+}
+
+.content--form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.content--form input {
+  background: var(--form);
+  width: 100%;
+  height: 3rem;
+  padding: 0 2rem;
+}
+
+.content--form button {
+  background: var(--primary);
+  width: 100%;
+  height: 2.8rem;
+  padding: 0;
+}
+
+.content--form button:hover {
+  background: var(--hover);
+}
+
+.content--welcome {
+  min-height: 4.6rem;
+  color: var(--primary);
+}
+
+.content--welcome span {
+  display: block;
+  font-size: 0.875rem;
+  margin-top: 1rem;
+}
+
+.content--welcome span a {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.content--error {
+  color: var(--error);
+  font-size: 0.75rem;
+  font-weight: 600;
+  height: 1rem;
+  margin-top: 0.5rem;
+  margin-left: 2rem;
+  margin-bottom: -1.35rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 48em) {
+  body {
+    background: hsl(var(--bkg));
+  }
+
+  .main_cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: none;
+    padding-left: 2.4rem;
+  }
+
+  .container {
+    height: 48rem;
+    max-width: 68rem;
+    padding: 0;
+    position: relative;
+
+    background: url(../assets/tablet/image-host.jpg) no-repeat;
+    background-position: top right;
+  }
+
+  .hero {
+    text-align: left;
+  }
+
+  .hero img {
+    margin: 3.15rem 0 0 0.01rem;
+  }
+
+  .hero__content {
+    background: hsl(var(--bkg));
+    max-height: 31.85rem;
+    max-width: 39.75rem;
+
+    padding-top: 5.8rem;
+    padding-right: 1rem;
+
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .hero__content h1 {
+    align-self: baseline;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    letter-spacing: 0.01rem;
+  }
+
+  .hero__content > p {
+    margin-top: 1.9rem;
+    width: 40ch;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .content--form {
+    margin-top: 2.5rem;
+    width: 26.688rem;
+    min-height: 3.5rem;
+    position: relative;
+  }
+
+  .content--form input {
+    background: var(--form);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 2rem;
+  }
+
+  .content--form button {
+    position: absolute;
+    right: 0;
+    height: calc(100% - 0.66rem);
+    width: 10.125rem;
+    margin: 0.33rem;
+    padding: 0;
+    cursor: pointer;
+    background: var(--primary);
+    color: hsl(var(--bkg));
+  }
+
+  .content--brands {
+    justify-content: flex-start;
+    gap: 2.5rem;
+    order: 3;
+
+    margin-top: 4rem;
+    opacity: 0.5;
+    z-index: 2;
+  }
+
+  .content--brands img {
+    height: 1.8rem;
+    transition: 0.3s ease;
+  }
+
+  .content--brands img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  .content--brands img:nth-child(3) {
+    height: 1.2rem;
+  }
+
+  .content--brands img:nth-child(4) {
+    margin-left: -1.2rem;
+  }
+
+  .hero__pattern {
+    background: url(../assets/desktop/bg-pattern-dots.svg) no-repeat;
+    height: 6.6rem;
+    margin-left: -0.5rem;
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (min-width: 68em) {
+  .main_cont {
+    justify-content: center;
+    max-width: 90rem;
+    margin: auto;
+  }
+
+  .container {
+    max-width: 79.65rem;
+    width: 100%;
+    height: 40rem;
+    margin-top: 3.2rem;
+    align-self: flex-end;
+    background: url(../assets/desktop/image-host.jpg) no-repeat;
+    background-position: top right;
+  }
+
+  .hero img {
+    margin-top: -1.7rem;
+    margin-left: -0.05rem;
+  }
+
+  .hero__content {
+    max-height: 31.8rem;
+    max-width: 45.2rem;
+    padding-top: 4.55rem;
+  }
+
+  .hero__content h1 {
+    margin-top: 1rem;
+    margin-left: -0.03rem;
+    font-size: 3.25rem;
+    line-height: 3.9rem;
+    font-weight: 100;
+    color: var(--primary);
+    text-transform: uppercase;
+  }
+
+  .hero__content h1 span {
+    color: var(--white);
+    letter-spacing: -0.01rem;
+  }
+
+  .hero__content p {
+    margin-top: 1.44rem;
+    max-width: 40ch;
+  }
+
+  .content--brands img:nth-child(4) {
+    height: 1.6rem;
+  }
+
+  .hero__pattern {
+    background-position: bottom right;
+    width: 100%;
+    z-index: 1;
+    margin-top: -3.35rem;
+    margin-left: 0rem;
+  }
+}
