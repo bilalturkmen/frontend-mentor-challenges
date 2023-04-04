@@ -1,0 +1,106 @@
+{
+  "heroNews": [
+    {
+      "url": "#",
+      "title": "The Bright Future of Web 3.0?",
+      "description": "We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?",
+      "readlink": "Read More"
+    }
+  ],
+  "sideNews": [
+    {
+      "id": "01",
+      "url": "#",
+      "title": "Hydrogen VS Electric Cars",
+      "description": "Will hydrogen-fueled cars ever catch up to EVs?"
+    },
+    {
+      "id": "02",
+      "url": "#",
+      "title": "The Downsides of AI Artistry",
+      "description": "What are the possible adverse effects of on-demand AI image generation?"
+    },
+    {
+      "id": "03",
+      "url": "#",
+      "title": "Is VC Funding Drying Up?",
+      "description": "Private funding by VC firms is down 50% YOY. We take a look at what that means."
+    }
+  ],
+  "featuredNews": [
+    {
+      "id": "01",
+      "image": {
+        "src": "/img/image-retro-pcs.jpg",
+        "alt": "small computer",
+        "width": 125,
+        "height": 100
+      },
+      "url": "#",
+      "title": "Reviving Retro PCs",
+      "description": "What happens when old PCs are given modern upgrades?"
+    },
+    {
+      "id": "02",
+      "image": {
+        "src": "/img/image-top-laptops.jpg",
+        "alt": "laptop keys",
+        "width": 125,
+        "height": 100
+      },
+      "url": "#",
+      "title": "Top 10 Laptops of 2022",
+      "description": "Our best picks for various needs and budgets."
+    },
+    {
+      "id": "03",
+      "image": {
+        "src": "/img/image-gaming-growth.jpg",
+        "alt": "dualshock",
+        "width": 125,
+        "height": 100
+      },
+      "url": "#",
+      "title": "The Growth of Gaming",
+      "description": "How the pandemic has sparked fresh opportunities."
+    }
+  ],
+  "navLinks": [
+    {
+      "url": "#",
+      "title": "Home"
+    },
+    {
+      "url": "#",
+      "title": "New"
+    },
+    {
+      "url": "#",
+      "title": "Popular"
+    },
+    {
+      "url": "#",
+      "title": "Trending"
+    },
+    {
+      "url": "#",
+      "title": "Categories"
+    }
+  ],
+  "footData": [
+    {
+      "id": 0,
+      "beforeText": "Challenge by",
+      "url": "https://www.frontendmentor.io/solutions/news-homepage-react-with-ts-95FhmSWQp9",
+      "label": "visit the challenge page",
+      "fromName": "Frontend Mentor"
+    },
+    {
+      "id": 1,
+      "beforeText": "Coded by",
+      "url": "https://bilalturkmen.com",
+      "label": "visit the coder's webpage",
+      "fromName": "Bilal Türkmen"
+    }
+  ]
+}
