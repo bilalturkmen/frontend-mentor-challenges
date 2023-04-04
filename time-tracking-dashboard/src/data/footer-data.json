@@ -1,0 +1,18 @@
+{
+  "FooterData": [
+    {
+      "id": 0,
+      "beforeText": "Challenge by",
+      "url": "https://www.frontendmentor.io/solutions/time-tracking-dashboard-with-react-ts-njkwXa4usV",
+      "label": "visit the challenge page",
+      "fromName": "Frontend Mentor"
+    },
+    {
+      "id": 1,
+      "beforeText": "Coded by",
+      "url": "https://bilalturkmen.com",
+      "label": "visit the coder's webpage",
+      "fromName": "Bilal Türkmen"
+    }
+  ]
+}
