@@ -13,7 +13,7 @@ A challenge on Frontend Mentor.
 ### 👍 My Challenges:
 
 - Training for `grid-area` property 😉
-- Add dark mode with css
+- Adding dark mode with css
 - Presenting pixel perfect view on my solution page
 - See hover states for all interactive elements
 
