@@ -1,33 +1,34 @@
-import { featData } from ".";
-
-interface Feature {
-  title: string;
-  description: string;
-  image: {
-    imageUrl: string;
-    width: number;
-    height: number;
-    alt: string;
-  };
-}
+import { Key } from "react";
+import { featData } from "./";
 
 const Features = () => {
   return (
     <section id="features" className="features">
-      {featData.features.map((feat: Feature) => (
-        <div key={feat.title} className="feature--card">
-          <div className="card--img">
-            <img
-              src={feat.image.imageUrl}
-              alt={feat.image.alt}
-              width={feat.image.width}
-              height={feat.image.height}
-            />
+      {featData.features.map(
+        (
+          feat: {
+            imageUrl: string;
+            title: string;
+            description: string;
+            width: number;
+            height: number;
+          },
+          index: Key
+        ) => (
+          <div key={index} className="feature--card">
+            <div className="card--img">
+              <img
+                src={feat.imageUrl}
+                alt=""
+                width={feat.width}
+                height={feat.height}
+              />
+            </div>
+            <h2> {feat.title} </h2>
+            <p>{feat.description}</p>
           </div>
-          <h2> {feat.title} </h2>
-          <p>{feat.description}</p>
-        </div>
-      ))}
+        )
+      )}
     </section>
   );
 };

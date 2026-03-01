@@ -5,7 +5,7 @@ import CountUp from "react-countup";
 import { useReward } from "react-rewards";
 
 function Result({ averageScore }) {
-  const [counting, setCounting] = useState(false);
+  const [isCounting, setIsCounting] = useState(false);
   const { reward: confettiReward } = useReward("rewardId", "emoji", {
     emoji: ["⚡️", "💥", "✨", "💫", "🌸", "🌟", "🌂"],
     elementSize: 15,
@@ -22,7 +22,7 @@ function Result({ averageScore }) {
             end={averageScore.toFixed(0)}
             duration={1}
             onEnd={() => {
-              setCounting(true);
+              setIsCounting(true);
               confettiReward();
             }}
           />
@@ -30,7 +30,7 @@ function Result({ averageScore }) {
         <span> of 100</span>
       </div>
       <div className="result--calc">
-        {!counting ? (
+        {!isCounting ? (
           <div className="calculating">calculating...</div>
         ) : (
           <div className="greeting"> Great</div>

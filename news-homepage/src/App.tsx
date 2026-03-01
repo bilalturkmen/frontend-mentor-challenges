@@ -15,16 +15,16 @@ export default function Home() {
         <Navbar links={jsonData.navLinks} />
       </header>
       <main>
-        <article className="hero">
+        <div className="hero">
           <h1 className="sr-only">w news hompage</h1>
           <div className="hero__news">
             <HeroBanner />
             <HeroNews news={jsonData.heroNews} />
           </div>
-          <aside className="hero__side">
+          <div className="hero__side">
             <SideNewsList title="New" news={jsonData.sideNews} />
-          </aside>
-        </article>
+          </div>
+        </div>
         <FeaturedNewsList news={jsonData.featuredNews} />
       </main>
       <footer>

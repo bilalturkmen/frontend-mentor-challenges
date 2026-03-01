@@ -7,21 +7,21 @@
   </h3>
 </div>
 <div >
-  A challenge on Frontend Mentor.
+  A challenge from Frontend Mentor.
 </div>
 
-### 👍 My Challenges:
+## 👍 My Challenges:
 
-- added calculation and celebration effect.
-- And also presenting a good page experience.
-- See hover states for all interactive elements on the page.
+- Celebration effect has been added for good scores.
+- Calculation animation was added when the page first loaded.
+- Design improvements have been made for a stunning experience.
 
 ![](./public/images/screenshot.jpg)
 
-### 🎉 Build With:
+## 🎉 Build With:
 
-- React js and Vite builder
-- Semantic HTML5 markup
-- Flexbox & Css Grid
+- React JS and Vite
+- Semantic HTML markup
+- Flexbox & Grid CSS
 - Mobile-first workflow
 - CSS custom properties

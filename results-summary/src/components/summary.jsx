@@ -71,7 +71,6 @@ function Summary({ data }) {
           Continue
         </button>
       </div>
-      <span id="rewardBtn" />
     </div>
   );
 }

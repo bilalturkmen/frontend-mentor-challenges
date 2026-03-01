@@ -3,7 +3,7 @@ function FooterComp() {
     <footer className="footer--attribution">
       Challenge by{" "}
       <a
-        href="https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI"
+        href="https://www.frontendmentor.io/solutions/interactive-rating-comp-reacttypescript-tpior-NEqq"
         target="_blank"
         aria-label="visit the challenge page"
       >

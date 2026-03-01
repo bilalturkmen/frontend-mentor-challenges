@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-import FooterComp from "./components/footer";
-import "./index.css";
+import { FooterComp } from "./components";
+import "./index-min.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

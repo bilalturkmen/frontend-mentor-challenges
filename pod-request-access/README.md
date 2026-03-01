@@ -7,21 +7,21 @@
   </h3>
 </div>
 <div>
-  A challenge on Frontend Mentor.
+  A challenge from Frontend Mentor.
 </div>
 
 ## 👍 My Challenges:
 
 - TypeScript used.
 - Email verification implemented.
-- After submit welcome message added.
+- A welcome message was added after submit.
 
 ![](./public/screenshot.jpg)
 
 ## 🎉 Build With:
 
-- React + TypeScript
-- Semantic HTML5 markup
-- Css Flexbox
+- React JS + TypeScript
+- Semantic HTML markup
+- Flexbox CSS
 - Mobile-first workflow
 - CSS custom properties

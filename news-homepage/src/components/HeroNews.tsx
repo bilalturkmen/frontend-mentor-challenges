@@ -6,7 +6,7 @@ const HeroNews = ({ news }: heroNewsProps) => {
   return (
     <>
       {news.map(({ title, description, readlink, url }) => (
-        <section key={title} className="hero__content">
+        <div key={title} className="hero__content">
           <h2>{title}</h2>
           <div>
             <p>{description}</p>
@@ -14,7 +14,7 @@ const HeroNews = ({ news }: heroNewsProps) => {
               {readlink}
             </a>
           </div>
-        </section>
+        </div>
       ))}
     </>
   );

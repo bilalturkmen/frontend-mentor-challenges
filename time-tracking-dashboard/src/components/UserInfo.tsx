@@ -21,10 +21,10 @@ const UserInfo = ({ setPeriod, period }: UserInfoProps) => {
           width={78}
           height={78}
         />
-        <section>
+        <div>
           <p>Report for</p>
           <h1>Jeremy Robson</h1>
-        </section>
+        </div>
       </div>
       <div className="user--time space">
         {periodOptions.map((option) => (

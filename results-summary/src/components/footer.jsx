@@ -1,22 +1,15 @@
-import React from "react";
+//metadata
+import { siteData } from "./";
 
-function FooterComp() {
+function FooterComp({ fmUrl = siteData.fmUrl, devUrl = siteData.devUrl }) {
   return (
     <footer className="footer--attribution">
       Challenge by{" "}
-      <a
-        href="https://www.frontendmentor.io/solutions/results-summary-component-with-react-js-oY58nHZGtW"
-        target="_blank"
-        aria-label="visit the challenge page"
-      >
+      <a href={fmUrl} target="_blank" aria-label="visit the challenge page">
         Frontend Mentor
       </a>
       . Coded by{" "}
-      <a
-        href="https://bilalturkmen.com"
-        target="_blank"
-        aria-label="visit the coder's webpage"
-      >
+      <a href={devUrl} target="_blank" aria-label="visit the coder's webpage">
         Bilal Türkmen
       </a>
       .
